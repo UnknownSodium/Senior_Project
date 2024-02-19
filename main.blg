@@ -1,0 +1,57 @@
+This is BibTeX, Version 0.99d
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: main.aux
+Reallocating 'name_of_file' (item size: 1) to 11 items.
+Reallocating 'name_of_file' (item size: 1) to 9 items.
+The style file: abbrvnat.bst
+Database file #1: References.bib
+Name 1 in "Muhammad Kamarul Kabilan, Nagaletchimee Annamalai, and Kee-Man Chuah" has a comma at the end for entry paper_2
+while executing---line 1347 of file abbrvnat.bst
+Name 1 in "Muhammad Kamarul Kabilan, Nagaletchimee Annamalai, and Kee-Man Chuah" has a comma at the end for entry paper_2
+while executing---line 1347 of file abbrvnat.bst
+Name 1 in "Muhammad Kamarul Kabilan, Nagaletchimee Annamalai, and Kee-Man Chuah" has a comma at the end for entry paper_2
+while executing---line 1429 of file abbrvnat.bst
+Name 1 in "Muhammad Kamarul Kabilan, Nagaletchimee Annamalai, and Kee-Man Chuah" has a comma at the end for entry paper_2
+while executing---line 1429 of file abbrvnat.bst
+You've used 2 entries,
+            2773 wiz_defined-function locations,
+            606 strings with 5113 characters,
+and the built_in function-call counts, 1146 in all, are:
+= -- 116
+> -- 31
+< -- 4
++ -- 11
+- -- 9
+* -- 68
+:= -- 159
+add.period$ -- 8
+call.type$ -- 2
+change.case$ -- 9
+chr.to.int$ -- 2
+cite$ -- 4
+duplicate$ -- 62
+empty$ -- 97
+format.name$ -- 13
+if$ -- 263
+int.to.chr$ -- 1
+int.to.str$ -- 1
+missing$ -- 2
+newline$ -- 20
+num.names$ -- 8
+pop$ -- 17
+preamble$ -- 1
+purify$ -- 7
+quote$ -- 0
+skip$ -- 60
+stack$ -- 0
+substring$ -- 76
+swap$ -- 24
+text.length$ -- 2
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 22
+warning$ -- 0
+while$ -- 10
+width$ -- 0
+write$ -- 37
+(There were 4 error messages)

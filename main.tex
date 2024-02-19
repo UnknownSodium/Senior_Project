@@ -1,0 +1,163 @@
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+
+%============ Logs ===========================
+\newcommand{\version}{ver 2.1}
+%=============================================
+
+\documentclass{mahidol_thesis}
+%====== Add the packages here ===============
+\usepackage{multirow}
+\usepackage[table,xcdraw]{xcolor}
+\usepackage{subcaption}
+\usepackage{lscape}
+\usepackage{amsmath}
+\usepackage{lipsum} %Generate dummy text for testing
+ %====== List of Coding Color Style ==============
+\definecolor{codegreen}{rgb}{0,0.6,0}
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+\definecolor{codepurple}{rgb}{0.58,0,0.82}
+%\definecolor{backcolour}{rgb}{0.95,0.95,0.92}
+\definecolor{backcolour}{rgb}{1,1,1}
+%=======================
+
+%====== Path to Figure Directories ===============
+\graphicspath{{./figures/chap1/}{./figures/chap2/}{./figures/chap3/}{./figures/chap4/}{./figures/chap5/}{./figures/chap6/}{./figures/appendix/}}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%Thesis Meta Data (edit each field)
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%Thesis Title 
+\newcommand{\thesisTitle}{Gamification of Learning Programming Language}
+\newcommand{\thesisTitleTH}{ชื่อวิทยานิพนธ์}
+
+%Thesis Keywords
+\newcommand{\thesisKeywordsTH}{ ลาเท็ก / วิทยานิพนธ์ (\~{}5 คำ)}
+\newcommand{\thesisKeywords}{ LaTeX / Thesis (\~{}5 words)}
+
+\newcommand{\totalPageTH}{๒๘}   %Total pages (See. the total number in English Acknowledgement Page then fill up here!)
+%\newcommand{\totalPageTH}{\pageref{LastPage}}
+
+%First Author name
+\newcommand{\thesisFirstTitleName}{Ms. }
+\newcommand{\thesisFirstAuthorName}{Akira}
+\newcommand{\thesisFirstAuthorLastName}{Panyawongkhanti}
+\newcommand{\thesisFirstTitleNameTH}{นาย}
+\newcommand{\thesisFirstAuthorNameTH}{ชื่อผู้แต่ง}
+\newcommand{\thesisFirstAuthorLastNameTH}{นามสกุลผู้แต่ง}
+\newcommand{\thesisFirstAuthorID}{6381306}
+\newcommand{\thesisFirstAuthorBD}{07 May 2003}
+\newcommand{\thesisFirstAuthorBP}{Bangkok, Thailand}
+\newcommand{\thesisFirstAuthorHC}{Mahidol International College}
+\newcommand{\thesisFirstAuthorTel}{087 363 3432}
+\newcommand{\thesisFirstAuthorEmail}{akira.pan@student.mahidol.edu}
+
+%Second Author name
+\newcommand{\thesisSecondTitleName}{Mr. }		%Comment all if you don't have second author
+\newcommand{\thesisSecondAuthorName}{Chawakorn}
+\newcommand{\thesisSecondAuthorLastName}{Watanakul}
+\newcommand{\thesisSecondTitleNameTH}{นางสาว }
+\newcommand{\thesisSecondAuthorNameTH}{ชื่อผู้แต่ง}
+\newcommand{\thesisSecondAuthorLastNameTH}{นามสกุลผู้แต่ง}
+\newcommand{\thesisSecondAuthorID}{6381285}
+\newcommand{\thesisSecondAuthorBD}{05 May 2003}
+\newcommand{\thesisSecondAuthorBP}{Bangkok, Thailand}
+\newcommand{\thesisSecondAuthorHC}{Mahidol International College}
+\newcommand{\thesisSecondAuthorTel}{094 451 5451}
+\newcommand{\thesisSecondAuthorEmail}{chawakorn.wat@student.mahidol.edu}
+
+%Third Author name
+%\newcommand{\thesisThirdTitleName}{Mr.}			%Comment all if you don't have third author
+%\newcommand{\thesisThirdAuthorName}{FirstName3}
+%\newcommand{\thesisThirdAuthorLastName}{LastName3}
+%\newcommand{\thesisThirdTitleNameTH}{นาย}
+%\newcommand{\thesisThirdAuthorNameTH}{ชื่อผู้แต่ง}
+%\newcommand{\thesisThirdAuthorLastNameTH}{นามสกุลผู้แต่ง}
+%\newcommand{\thesisThirdAuthorID}{33333333}
+%\newcommand{\thesisThirdAuthorBD}{03 March 2002}
+%\newcommand{\thesisThirdAuthorBP}{Bangkok, Thailand}
+%\newcommand{\thesisThirdAuthorHC}{Mahidol International College}
+%\newcommand{\thesisThirdAuthorTel}{333 333 333}
+%\newcommand{\thesisThirdAuthorEmail}{ThirdEmail@outlook.com}
+
+%Fourth Author name
+%\newcommand{\thesisFourthTitleName}{Mr.}			%Comment all if you don't have fourth author
+%\newcommand{\thesisFourthAuthorName}{Firstname4} \n
+%\newcommand{\thesisFourthAuthorLastName}{Lastname4}
+%\newcommand{\thesisFourthTitleNameTH}{นาย}
+%\newcommand{\thesisFourthAuthorNameTH}{ชื่อผู้แต่ง4}
+%\newcommand{\thesisFourthAuthorLastNameTH}{นามสกุลผู้แต่ง4}
+%\newcommand{\thesisFourthAuthorID}{4444444}
+%\newcommand{\thesisFourthdAuthorBD}{04 April 2002}
+%\newcommand{\thesisFourthAuthorBP}{Bangkok, Thailand}
+%\newcommand{\thesisFourthAuthorHC}{Mahidol International College}
+%\newcommand{\thesisFourthAuthorTel}{444 444 4444}
+%\newcommand{\thesisFourthAuthorEmail}{FourthEmail@gmail.com}
+
+%Month, year and date of thesis publication
+\newcommand{\thesisGradDateTH}{15 กรกฎาคม 2567}  %Graduate Date/Month/Year
+\newcommand{\thesisGradDate}{July 15, 2024} %Graduated Year
+\newcommand{\thesisAcademicYear}{2023} %Academic Year
+\newcommand{\thesisAcademicYearTH}{๒๕๖๖} %Academic Year
+
+%Department
+\newcommand{\thesisDepENG}{Computer Engineering}
+\newcommand{\thesisDepTH}{วิศวกรรมคอมพิวเตอร์}
+
+%Advisor name
+\newcommand{\thesisAdv}{Dr. Mingmanas Sivaraksa}		%with title name
+\newcommand{\thesisAdvTH}{ดร. ชื่อที่ปรึกษา นามสกุลที่ปรึกษา}		%with title name
+\newcommand{\advDegree}{Ph.D. (Information Engineering)}
+
+%Thesis Committees
+\newcommand{\Chair}{\thesisAdv}
+\newcommand{\ChairDegree}{\advDegree}
+\newcommand{\committeeI}{Tanasanee Phienthrakul}
+\newcommand{\committeeIDegree}{Ph.D. (Computer Engineering)}
+\newcommand{\committeeII}{Committee 2}
+\newcommand{\committeeIIDegree}{Ph.D. (Computer Engineering)}
+\newcommand{\committeeIII}{Committee 3}
+\newcommand{\committeeIIIDegree}{Ph.D. (Computer Science)}
+
+\begin{document}
+%---- Cover Page Section ------
+\coverpageENG
+\coverpageENGTwo
+\entitlepageOne
+\entitlepageTwo
+%---- Front Page Section ------
+\pagestyle{front}
+\frontmatter
+\biography
+\acknowledgement{acknowledgement.tex}
+\abstractTH{abstractTH.tex}
+\abstractENG{abstractENG.tex}
+\tableofcontents
+\newpage
+\listoftables
+\newpage
+\listoffigures
+%---- Body -----
+\pagestyle{chapter}
+\mainmatter
+\pagestyle{fancy}
+\input{chapter1.tex}
+\input{chapter2.tex}
+\input{chapter3.tex}
+\input{chapter4.tex}
+\input{chapter5.tex}
+\newpage
+%---- Bibliography -----
+\pagestyle{bibliography}
+\bibliography{References} 
+\bibliographystyle{abbrvnat}
+\label{lastpage}
+\newpage
+%---- Appendix ----
+%\coverAppendix
+%\pagestyle{appendix}
+%\appendix
+%\input{AppendixA.tex}
+
+\end{document}

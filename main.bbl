@@ -1,0 +1,26 @@
+\begin{thebibliography}{2}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Luo(2022)]{paper_1}
+Z.~Luo.
+\newblock Gamification for educational purposes: What are the factors
+  contributing to varied effectiveness?
+\newblock \emph{Education and Information Technologies Volume 27}, pages
+  891--915, 2022.
+\newblock
+  \doi{https://doi-org.ejournal.mahidol.ac.th/10.1007/s10639-021-10642-9}.
+
+\bibitem[Muhammad Kamarul~Kabilan and Chuah(2023)]{paper_2}
+N.~A. Muhammad Kamarul~Kabilan and K.-M. Chuah.
+\newblock Practices, purposes and challenges in integrating gamification using
+  technology: A mixed-methods study on university academics.
+\newblock \emph{Education and Information Technologies Volume 28}, pages
+  14249--14281, 2023.
+\newblock
+  \doi{https://doi-org.ejournal.mahidol.ac.th/10.1007/s10639-023-11723-7}.
+
+\end{thebibliography}
